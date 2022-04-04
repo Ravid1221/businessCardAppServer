@@ -64,6 +64,7 @@ router.post("/", auth, async (req, res) => {
 
     card = new Card({
       title: card.title,
+      subTitle: card.subTitle,
       description: card.description,
       address: card.address,
       phone: card.phone,
@@ -107,6 +108,7 @@ router.put("/:id", auth, async (req, res) => {
 
     card = {
       title: card.title,
+      subTitle: card.subTitle,
       description: card.description,
       address: card.address,
       phone: card.phone,
